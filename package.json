@@ -1,0 +1,56 @@
+{
+  "name": "telegram-message-saver",
+  "version": "1.0.0",
+  "description": "Save your Telegram messages before you lose access",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test": "node test/telegram.test.js",
+    "build": "electron-builder --win",
+    "build:dir": "electron-builder --win --dir"
+  },
+  "author": "ibuildrun",
+  "license": "MIT",
+  "build": {
+    "appId": "com.ibuildrun.tgsaver",
+    "productName": "TG Saver",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true
+    },
+    "portable": {
+      "artifactName": "TG-Saver-${version}-portable.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "telegram": "^2.26.8",
+    "input": "^1.0.1"
+  }
+}
