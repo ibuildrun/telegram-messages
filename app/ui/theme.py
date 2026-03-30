@@ -1,0 +1,38 @@
+"""Theme constants for the application."""
+
+# Colors
+BG_DARK = "#0f0f0f"
+BG_CARD = "#1a1a2e"
+BG_CARD_HOVER = "#1f1f3a"
+BG_INPUT = "#16213e"
+BG_SIDEBAR = "#0a0a1a"
+
+ACCENT = "#7c8cf8"
+ACCENT_HOVER = "#9aa4ff"
+ACCENT_DIM = "#4a5ab8"
+
+TEXT_PRIMARY = "#e0e0e0"
+TEXT_SECONDARY = "#888888"
+TEXT_MUTED = "#555555"
+
+SUCCESS = "#4caf50"
+WARNING = "#ff9800"
+ERROR = "#f44336"
+
+BORDER = "#2a2a4a"
+BORDER_ACTIVE = "#7c8cf8"
+
+# Fonts
+FONT_FAMILY = "Segoe UI"
+FONT_TITLE = (FONT_FAMILY, 20, "bold")
+FONT_HEADING = (FONT_FAMILY, 16, "bold")
+FONT_SUBHEADING = (FONT_FAMILY, 13, "bold")
+FONT_BODY = (FONT_FAMILY, 12)
+FONT_SMALL = (FONT_FAMILY, 10)
+FONT_MONO = ("Consolas", 11)
+
+# Sizes
+SIDEBAR_WIDTH = 260
+CORNER_RADIUS = 12
+BUTTON_HEIGHT = 40
+INPUT_HEIGHT = 40
